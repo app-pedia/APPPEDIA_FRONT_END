@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorWhite">
+
+        <RelativeLayout
+            android:id="@+id/application_search"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:elevation="10dp">
+
+            <ImageView
+                android:id="@+id/iv_application_star"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:src="@drawable/apppedia_nemo" />
+
+            <ImageView
+                android:id="@+id/iv_application_logo"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/iv_application_star"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/youtube_logo" />
+
+            <TextView
+                android:id="@+id/tv_application_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/iv_application_logo"
+                android:text="YouTube"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="@color/colorBlack"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_application_rating_average"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@id/iv_application_logo"
+                android:text="4.14"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="@color/colorGrayDark"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_application_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:text="Video Players"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="@color/colorGrayDark"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorWhite">
+
+        <RelativeLayout
+            android:id="@+id/application_search"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:elevation="10dp">
+
+            <ImageView
+                android:id="@+id/iv_related"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/apppedia_related" />
+
+            <TextView
+                android:id="@+id/tv_related_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/iv_related"
+                android:text="3 reasons to praise YouTube"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="@color/colorBlack"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_related_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@id/iv_related"
+                android:text="Video Players"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="@color/colorGrayDark"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.apppedia">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.DIAL_PHONE" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/apppedia"
+        android:label="앱과사전"
+        android:roundIcon="@drawable/apppedia"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        android:name =".repository.App"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:usesCleartextTraffic="true">
+
+        <activity android:name=".activity.StartLogInActivity" />
+        <activity android:name=".activity.StartLogUpActivity" />
+        <activity android:name=".activity.MainFavoritesActivity" />
+        <activity android:name=".activity.MainFavoritesVsActivity" />
+        <activity android:name=".activity.MainFavoritesVsResultActivity" />
+        <activity android:name=".activity.MainRelatedActivity" />
+        <activity android:name=".activity.MainScsetActivity" />
+        <activity android:name=".activity.MainScsetPlusActivity" />
+
+        <activity android:name=".activity.SearchActivity" />
+        <activity android:name=".activity.SearchListActivity" />
+        <activity android:name=".activity.SearchInfoActivity" />
+        <activity android:name=".activity.SearchDevActivity" />
+
+        <activity android:name=".activity.StartSplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
